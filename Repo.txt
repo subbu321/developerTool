@@ -1,0 +1,22 @@
+public class User
+{
+    public static void main(String[] args)
+    {
+        List<Data>d1=new ArrayList<>();
+        d1.add(new Data("siva",20));
+
+
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter age: ");
+         int s=sc.nextInt();
+            if(s<=18){
+                System.out.println("Hello"+d1.get(0)+"you are minor");
+            } else if (s>=18&&s<=65) {
+                System.out.println("Hello"+d1.get(0)+"you are an adult");
+            }else{
+                System.out.println("Hello"+d1.get(0)+"you are a senior citizen");
+            }
+
+
+    }
+}
